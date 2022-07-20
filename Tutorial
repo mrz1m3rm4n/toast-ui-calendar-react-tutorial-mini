@@ -1,4 +1,8 @@
-1.- Crear el componente para el calendario, importar la dependencia y declararlo en el return.
+********** EN PROGRESO ***********
+
+*-* Crear el componente para el calendario, importar la dependencia y declararlo en el return.
+
+Nota: por defecto muestra la vista por semana
 
 import Calendar from '@toast-ui/react-calendar'
 
@@ -7,3 +11,19 @@ const Calendario = () => {
     <Calendar />
   )
 }
+
+*-* Personalizar la visata del calendario, la vista puede ser por mes, semana o dia
+
+Nota: las configuraciones realizadas en semana se van a ver reflejadas en la vista de dia
+
+  <Calendar
+    view='month'
+  />
+  
+  <Calendar
+    view='week'
+  />
+  
+  <Calendar
+    view='day'
+  />
